@@ -45,5 +45,40 @@
         </div>
         </div>
 
+               </div>
+        <a href="#" id="prev-site">⬅</a>
+        <a href="#" id="next-site">➡</a>
+
+        <script>
+            let currentIndex = 0; // testing
+            //let currentIndex = siteData.sites.findIndex(site => site.website === window.location.href);
+
+            document.getElementById("prev-site").addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent default link behavior
+
+                // Go to the previous site if available
+                if (currentIndex > 0) {
+                    currentIndex--;
+                }
+                else { // currentIndex == 0
+                    currentIndex = siteData.sites.length - 1;
+                }
+                window.location.href = siteData.sites[currentIndex].website;
+            });
+
+            document.getElementById("next-site").addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent default link behavior
+
+                // Go to the previous site if available
+                if (currentIndex < siteData.sites.length - 1) {
+                    currentIndex++;
+                }
+                else { // currentIndex == siteData.sites.length - 1
+                    currentIndex = 0;
+                }
+                window.location.href = siteData.sites[currentIndex].website;
+            });
+        </script>
+
     </body>
 </html>
