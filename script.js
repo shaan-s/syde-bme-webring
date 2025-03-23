@@ -1,3 +1,7 @@
+function formatUrl(url) {
+    return url.replace(/(^\w+:|^)\/\//, '').replace(/^www\./, "");
+}
+
 function createComponents(sites,selected,search) {
     var curr_class;
     const sitebox = document.getElementById("site-box");
@@ -24,7 +28,7 @@ function createComponents(sites,selected,search) {
         const cnt3 = document.createElement("div");
         const link = document.createElement("a");
         cnt3.className = curr_class;
-        link.textContent = person.website;
+        link.textContent = formatUrl(person.website);
         link.href = person.website;
         cnt3.appendChild(link);
 
