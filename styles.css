@@ -13,8 +13,6 @@ body {
     font-family: GeistMono, monospace;
 }
 
-
-
 #site-box {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -33,7 +31,8 @@ h1 {
 
 .headbox{
     margin-top: 2em;
-    float: right; width: 50%;
+    float: right;
+    width: 50%;
 }
 
 .head-cell {
