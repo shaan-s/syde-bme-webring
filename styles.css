@@ -20,16 +20,41 @@ body {
     grid-template-columns: auto auto auto;
 }
 
+.midcontain {
+    margin-left: 10%;
+    margin-right: 10%;
+}  
+
+h1 {
+    font-family: PressStart2P;
+}
+
+.headbox{
+    margin-top: 2em;
+    width: 50%;
+}
+
+.head-cell {
+    font-weight: bold;
+}
+
+.cell {
+    margin-top: 1em;;
+}
 
 .unlight {
     color: #AAA;
 }
 
-.midcontain {
-    margin-left: 20%;
-    margin-right: 20%;
-}  
+#searchbar {
+    font-family: GeistMono;
+    width: 100%;
+    padding: 10px 20px;
+}
 
-h1 {
-    font-family: PressStart2P;
+button {
+    background-color: white;
+    font-family: GeistMono;
+    padding: 10px 20px;
+    color:#666;
 }
