@@ -1,13 +1,19 @@
-function createComponents(sites,selected) {
-    console.log("t");
+function createComponents(sites,selected,search) {
     var curr_class;
     const sitebox = document.getElementById("site-box");
     sitebox.innerHTML = "";
     sites.forEach((person, index) => {
-        if (person.program == selected || selected == "") {
+        curr_class = "cell unlight";
+        let search_l = search.toLowerCase();
+
+        if (person.program == selected) {
             curr_class = "cell";
         }
-        else {curr_class = "cell unlight";}
+        
+        if (selected == "") {
+            if ((person.name.toLowerCase()).includes(search_l) || (person.year).includes(search_l)) {
+                curr_class = "cell";
+        }}
         
         const cnt1 = document.createElement("div");
         cnt1.className = curr_class;
@@ -29,16 +35,16 @@ function createComponents(sites,selected) {
     });
 }
 
-createComponents(siteData.sites,"")
+createComponents(siteData.sites,"","")
 
 document.getElementById("BME").addEventListener("click", function() {
-    createComponents(siteData.sites,"BME")
+    createComponents(siteData.sites,"BME","")
   });
 
 document.getElementById("SYDE").addEventListener("click", function() {
-    createComponents(siteData.sites,"SYDE")
+    createComponents(siteData.sites,"SYDE","")
 });
 
-document.getElementById("SYDE").addEventListener("click", function() {
-    createComponents(siteData.sites,"SYDE")
+document.getElementById("searchbar").addEventListener("keyup", function() {
+    createComponents(siteData.sites,"",document.getElementById("searchbar").value);
 });
