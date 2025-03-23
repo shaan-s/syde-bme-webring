@@ -1,8 +1,35 @@
+@font-face {
+    font-family: 'GeistMono';
+    src: url("GeistMono.ttf");
+}
+
+@font-face {
+    font-family: 'PressStart2P';
+    src: url("PressStart2P-Regular.ttf");
+}
+
+body {
+    background-color: #F0F8FF;
+    font-family: GeistMono, monospace;
+}
+
+
+
 #site-box {
     display: grid;
     grid-template-columns: auto auto auto;
 }
 
+
 .unlight {
     color: #AAA;
+}
+
+.midcontain {
+    margin-left: 20%;
+    margin-right: 20%;
+}  
+
+h1 {
+    font-family: PressStart2P;
 }
