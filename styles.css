@@ -18,6 +18,7 @@ body {
 #site-box {
     display: grid;
     grid-template-columns: auto auto auto;
+    width: 75%;
 }
 
 .midcontain {
@@ -27,11 +28,12 @@ body {
 
 h1 {
     font-family: PressStart2P;
+    margin: 0px;
 }
 
 .headbox{
     margin-top: 2em;
-    width: 50%;
+    float: right; width: 50%;
 }
 
 .head-cell {
@@ -50,6 +52,7 @@ h1 {
     font-family: GeistMono;
     width: 100%;
     padding: 10px 20px;
+    margin: 1em 0em;
 }
 
 button {
