@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'GeistMono';
-    src: url("GeistMono.ttf");
+    src: url("static/GeistMono.ttf");
 }
 
 @font-face {
     font-family: 'PressStart2P';
-    src: url("PressStart2P-Regular.ttf");
+    src: url("static/PressStart2P-Regular.ttf");
 }
 
 body {
@@ -35,6 +35,13 @@ img{
     height: 640px;
     width: 640px;
     z-index: -1;
+    opacity: 0.5;
+}
+.cell {
+    transition: font-weight 0.5s linear;
+}
+.cell:hover {
+    font-weight: 800;
 }
 .headbox{
     margin-top: 2em;
