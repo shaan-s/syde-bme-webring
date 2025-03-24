@@ -102,5 +102,5 @@ a {color:  #005299}
     img{display:none;}
     body{background-image: url("static/largeicon.jpg");background-repeat: no-repeat;}
 
-    #resulttxt{float:left;}
+    #resulttxt{float:none;}
 }
