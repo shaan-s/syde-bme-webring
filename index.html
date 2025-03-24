@@ -29,25 +29,27 @@
     </head>
     <body>
         <div class="midcontain">
-            <div class="headbox" style="float:right;">
-                Welcome to the webring for the SYDE and BME programs at the University of Waterloo. <br><br>
-        Submit your website in a <a href="">github pull request</a>!
-        </div>
-        <div class="headbox"><h1>syde/bme webring</h1></div>
+        <div class="headbox hl"><h1>syde/&#8203;bme webring</h1><img src="largeicon.jpg"></div>
+        <div class="headbox hr">
+            Welcome to the webring for the systems design and biomedical engineering programs at the <a href="https://uwaterloo.ca/">University of Waterloo</a> (Ontario, Canada). <br><br>
 
+    Open to all current and past students as well as faculty. Submit your website in a <a href="https://github.com/shaan-s/syde-bme-webring">github pull request</a>!
+    </div>
 
-        <input id="searchbar" type=search placeholder="Search by name or year "> </input>
-        <span style="color:#666;">Filters:</span>
+        <input id="searchbar" type=search placeholder="search by name or year... "> </input>
+        <span style="color:#666;">filters:</span>
         <button id="BME">BME</button>
         <button id="SYDE">SYDE</button>
+
+        <span style="float:right;color:#666;"><span id="sitescount">0</span> sites<span id="highlighted"></span></span>
 
         <div id="site-box">
         </div>
         </div>
-
-               </div>
         <a href="#" id="prev-site">⬅</a>
         <a href="#" id="next-site">➡</a>
+               </div>
+
 
         <script>
             let currentIndex = 0; // testing

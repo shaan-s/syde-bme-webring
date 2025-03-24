@@ -20,8 +20,8 @@ body {
 }
 
 .midcontain {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }  
 
 h1 {
@@ -29,12 +29,20 @@ h1 {
     margin: 0px;
 }
 
+img{
+    position: absolute;
+    top: -10px;
+    height: 640px;
+    width: 640px;
+    z-index: -1;
+}
 .headbox{
     margin-top: 2em;
-    float: right;
-    width: 50%;
+    float: left;
 }
 
+.hl {width:25%;}
+.hr {width:75%;}
 .head-cell {
     font-weight: bold;
 }
@@ -57,6 +65,18 @@ h1 {
 button {
     background-color: white;
     font-family: GeistMono;
-    padding: 10px 20px;
+    padding: 7px 15px;
     color:#666;
+}
+
+.highlight {
+    background-color:  #005299;
+    color: white;
+}
+
+a {color:  #005299}
+
+@media only screen and (max-width: 1000px) {
+    .hr, .hl {width:100%;}
+    .mid-contain {margin:0px;}
 }
