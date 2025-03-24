@@ -35,7 +35,6 @@ img{
     height: 640px;
     width: 640px;
     z-index: -1;
-    opacity: 0.5;
 }
 
 p{
@@ -59,7 +58,7 @@ p{
 }
 
 .cell {
-    margin-top: 1em;;
+    margin-top: 1em;
 }
 
 .unlight {
@@ -89,9 +88,19 @@ button {
     color: white;
 }
 
+#resulttxt {
+    float:right;
+    color:#666;
+}
+
 a {color:  #005299}
 
 @media only screen and (max-width: 1000px) {
     .hr, .hl {width:100%;}
     .mid-contain {margin:0px;}
+    #site-box {width:100%}
+    img{display:none;}
+    body{background-image: url("static/largeicon.jpg");background-repeat: no-repeat;}
+
+    #resulttxt{float:left;}
 }
