@@ -97,10 +97,13 @@ a {color:  #005299}
 
 @media only screen and (max-width: 1000px) {
     .hr, .hl {width:100%;}
-    .mid-contain {margin:0px;}
-    #site-box {width:100%}
+    #site-box {width:100%;font-size: 14px;grid-template-columns: auto auto 50%; gap: 5px}
     img{display:none;}
     body{background-image: url("static/largeicon.jpg");background-repeat: no-repeat;}
-
     #resulttxt{float:none;}
+}
+
+@media only screen and (max-width: 700px) {
+    .midcontain {margin:0px; }
+    #site-box {font-size: 13px}
 }
