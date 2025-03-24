@@ -37,6 +37,10 @@ img{
     z-index: -1;
     opacity: 0.5;
 }
+
+p{
+    margin-top: 0px;
+}
 .cell {
     transition: font-weight 0.5s linear;
 }
@@ -62,6 +66,10 @@ img{
     color: #AAA;
 }
 
+.foot {
+    margin-top: 5em;
+    text-align: center;
+}
 #searchbar {
     font-family: GeistMono;
     width: 100%;
