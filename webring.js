@@ -1,12 +1,12 @@
 const webring = [
     "https://about.ceruleanechoes.com/",
-    "http://www.ahyankabir.me",
+    "http://www.ahyankabir.me/",
     "https://www.brandonling.me/",
 ];
 
 
 function setWebringLinks() {
-    const currentSite = "http://www.ahyankabir.me";
+    const currentSite = window.location.href;
     const index = webring.indexOf(currentSite);
 
     if (index === -1) return; // Exit if site is not in the webring
