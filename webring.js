@@ -1,6 +1,6 @@
 const webring = [
     "https://about.ceruleanechoes.com/",
-    "http://www.ahyankabir.me/",
+    "https://www.ahyankabir.me/",
     "https://www.brandonling.me/",
 ];
 
