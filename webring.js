@@ -6,7 +6,7 @@ const webring = [
 
 
 function setWebringLinks() {
-    const currentSite = window.location.href;
+    const currentSite = "http://www.ahyankabir.me";
     const index = webring.indexOf(currentSite);
 
     if (index === -1) return; // Exit if site is not in the webring
