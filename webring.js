@@ -25,21 +25,21 @@ let navigateWebring = () => {
       webringMatch(currentSite, site.website)
     );
     const increment = nav === "next" ? 1 : -1;
-    let newIndex = (currIndex + increment) % webringData.sites.length;
-    if (newIndex < 0) newIndex = webringData.sites.length - 1;
-    if (!webringData.sites[newIndex]) return;
+    let newIndex = (currIndex + increment) % siteData.sites.length;
+    if (newIndex < 0) newIndex = site.sites.length - 1;
+    if (!siteData.sites[newIndex]) return;
   
     document.body.innerHTML = `
     <main class="p-6 min-h-[100vh] w-[100vw] text-black-900">
       <p class="font-latinMonoCondOblique">redirecting...</p>
     </main>
     `;
-    window.location.href = webringData.sites[newIndex].website;
+    window.location.href = siteData.sites[newIndex].website;
 };
 
 // running navigate if url includes query on load
 document.addEventListener("DOMContentLoaded", () => {
-    if (window.location.search.includes("?nav=")) {
+    if (window.location.hash.includes("?nav=")) {
       navigateWebring();
     }
   });
