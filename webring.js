@@ -36,3 +36,10 @@ let navigateWebring = () => {
     `;
     window.location.href = webringData.sites[newIndex].website;
 };
+
+// running navigate if url includes query on load
+document.addEventListener("DOMContentLoaded", () => {
+    if (window.location.search.includes("?nav=")) {
+      navigateWebring();
+    }
+  });
