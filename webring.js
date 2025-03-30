@@ -26,7 +26,7 @@ let navigateWebring = () => {
     );
     const increment = nav === "next" ? 1 : -1;
     let newIndex = (currIndex + increment) % siteData.sites.length;
-    if (newIndex < 0) newIndex = site.sites.length - 1;
+    if (newIndex < 0) newIndex = siteData.sites.length - 1;
     if (!siteData.sites[newIndex]) return;
   
     document.body.innerHTML = `
