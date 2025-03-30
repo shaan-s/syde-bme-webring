@@ -1,7 +1,15 @@
 var selected = "";
 
-function formatUrl(url) {
-    return url.replace(/(^\w+:|^)\/\//, '').replace(/^www\./, "");
+// removing protocol, www., and trailing slashes (\)
+function formatUrl(url) { 
+    return url.replace(/(^\w+:|^)\/\//, '').replace(/^www\./, "").replace(/\/$/, "");
+}
+
+// matching webring url to the one in list
+const webringMatch = (searchTerm, target) => {
+    const stFormatted = formatUrl(searchTerm);
+    const tFormatted = formatUrl(target);
+    return stFormatted.includes(tFormatted) || tFormatted.includes(stFormatted);
 }
 
 function createComponents(sites,selected,search) {
@@ -95,3 +103,5 @@ document.getElementById("SYDE").addEventListener("click", function() {
 document.getElementById("searchbar").addEventListener("keyup", function() {
     createComponents(siteData.sites,"",document.getElementById("searchbar").value);
 });
+
+export {formatUrl, webringMatch};
