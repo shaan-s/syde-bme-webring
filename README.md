@@ -20,11 +20,11 @@ It's reccomend to adjust the styling based on your site, but feel free to start 
 
 ```html
 <div style="line-height: 1em; display: flex;align-items: center; gap: 12px;">
-	<a href="https://sydeb.me/#[your site URL]?nav=prev" style="text-decoration:none;">&lt;</a>
+	<a href="https://sydeb.me/#[your site URL]?nav=prev" style="text-decoration:none; color:black">&lt;</a>
 	<a href="https://sydeb.me" target="_blank">
 	  <img src="https://sydeb.me/icons/black.svg" alt="SYDE/BME Webring" style="width: 24px;">
 	</a>
-	<a href="https://sydeb.me/#[your site URL]?nav=next" style="text-decoration:none;">&gt;</a>
+	<a href="https://sydeb.me/#[your site URL]?nav=next" style="text-decoration:none; color:black">&gt;</a>
 </div>
 ```
 Replace [your site URL] with your website.
