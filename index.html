@@ -1,29 +1,36 @@
 <html>
-    <head>
-        <link href="styles.css" rel="stylesheet" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/x-icon" href="static/favicon.ico">
-        <script>
-            const siteData = {
+
+<head>
+    <link href="styles.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+    <script>
+        const siteData = {
             "sites": [
                 {
-                "name": "Shaan Sawrup",
-                "year": "2029",
-                "program": "BME",
-                "website": "https://about.ceruleanechoes.com"
+                    "name": "Shaan Sawrup",
+                    "year": "2029",
+                    "program": "BME",
+                    "website": "https://about.ceruleanechoes.com"
                 },
                 {
-                "name": "Ahyan Kabir",
-                "year": "2029",
-                "program": "BME",
-                "website": "https://www.ahyankabir.me"
+                    "name": "Ahyan Kabir",
+                    "year": "2029",
+                    "program": "BME",
+                    "website": "https://www.ahyankabir.me"
                 },
                 {
-                "name": "Brandon Ling",
-                "year": "2029",
-                "program": "BME",
-                "website": "https://brandonling.me"
+                    "name": "Brandon Ling",
+                    "year": "2029",
+                    "program": "BME",
+                    "website": "https://brandonling.me"
                 },
+                {
+                    "name": "Nicholas Chen",
+                    "year": "2029",
+                    "program": "SYDE",
+                    "website": "https://nicholaschen.me"
+                }
                 /* !! Add your website here !! Copy the template and add it above !!
                 {
                 "name": "[First Last]",
@@ -33,19 +40,25 @@
                 },
                 */
 
-            ]}
-        </script>
-        <script src="script.js" type="module"></script>
-        <script src="webring.js" type="module"></script>
-    </head>
-    <body>
-        <div class="midcontain">
-        <div class="headbox hl"><h1>syde/&#8203;bme webring</h1><img src="static/largeicon.jpg"></div>
-        <div class="headbox hr">
-        <p>Welcome to the webring for the systems design and biomedical engineering programs at the <a href="https://uwaterloo.ca/">University of Waterloo</a> (Ontario, Canada).</p>
+            ]
+        }
+    </script>
+    <script src="script.js" type="module"></script>
+    <script src="webring.js" type="module"></script>
+</head>
 
-    <p>Open to current & past students, and faculty. Submit your website in a <a href="https://github.com/shaan-s/syde-bme-webring">github pull request</a>!</p>
-    </div>
+<body>
+    <div class="midcontain">
+        <div class="headbox hl">
+            <h1>syde/&#8203;bme webring</h1><img src="static/largeicon.jpg">
+        </div>
+        <div class="headbox hr">
+            <p>Welcome to the webring for the systems design and biomedical engineering programs at the <a
+                    href="https://uwaterloo.ca/">University of Waterloo</a> (Ontario, Canada).</p>
+
+            <p>Open to current & past students, and faculty. Submit your website in a <a
+                    href="https://github.com/shaan-s/syde-bme-webring">github pull request</a>!</p>
+        </div>
 
         <input id="searchbar" type=search placeholder="search by name or year... "> </input>
         <span style="color:#666;">filters:</span>
@@ -58,5 +71,6 @@
         </div>
 
         <div class="foot"><em><a href="https://github.com/shaan-s/syde-bme-webring">what is a webring?</a></em></div>
-    </body>
+</body>
+
 </html>
